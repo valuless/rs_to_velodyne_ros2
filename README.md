@@ -29,8 +29,9 @@ ROS2 速腾RoboSense激光雷达点云转 Velodyne 标准格式转换包
 
 编译安装
 
-cd ~/ros2_ws/src
-git clone https://github.com/valuless/rs_to_velodyne_ros2.git
-cd ..
-colcon build --packages-select rs_to_velodyne_ros2
-source install/setup.bash
+    cd ~/ros2_ws/src
+    git clone https://github.com/valuless/rs_to_velodyne_ros2.git
+    cd ..
+    colcon build --packages-select rs_to_velodyne_ros2
+    source install/setup.bash
+    ros2 launch rs_to_velodyne_ros2 convert.launch.py
